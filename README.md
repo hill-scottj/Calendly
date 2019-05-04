@@ -1,3 +1,6 @@
+Tests were written with WATIR in Ruby. 
+gem install watir
+
 Links to external sites
 
 Google Docs for manual results + suggestions:

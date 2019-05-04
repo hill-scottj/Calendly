@@ -1,6 +1,5 @@
 # This test script will generate a play board with a 3x3 dimension
-
-require 'watir-webdriver'
+require 'watir'
  
 # instantiate the browser
 chrome = Watir::Browser.new
@@ -8,7 +7,6 @@ chrome = Watir::Browser.new
 chrome.goto 'https://codepen.io/jshlfts32/full/bjambP/'
 
 # Generate the game board
-chrome.iframe(id: 'result').text_field(:id => "number").set '3'
+assert('that entry can be made into the text field') {chrome.iframe(id: 'result').text_field(:id => "number").set '3'}
 chrome.iframe(id: 'result').button(:id => "start").click
-sleep(10)
-
+sleep(2)

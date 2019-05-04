@@ -1,7 +1,7 @@
 # This test case validates that all UI elements are present in the web interface.
 # Output is generated to the RUBY console.
 
-require 'watir-webdriver'
+require 'watir'
  
 # instantiate the browser
 chrome = Watir::Browser.new

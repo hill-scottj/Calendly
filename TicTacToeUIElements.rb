@@ -8,7 +8,7 @@ chrome = Watir::Browser.new
 # go to the link provided
 chrome.goto 'https://codepen.io/jshlfts32/full/bjambP/'
 
-#locate the text field for data entry
+#locate UI element fields
 puts chrome.iframe(id: 'result').text_field(:id => "number").exists?
 puts chrome.iframe(id: 'result').button(:id => "start").exists?
 puts chrome.iframe(id: 'result').button(:id => "start").enabled?

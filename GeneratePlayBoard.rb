@@ -7,6 +7,6 @@ chrome = Watir::Browser.new
 chrome.goto 'https://codepen.io/jshlfts32/full/bjambP/'
 
 # Generate the game board
-assert('that entry can be made into the text field') {chrome.iframe(id: 'result').text_field(:id => "number").set '3'}
+chrome.iframe(id: 'result').text_field(:id => "number").set '3'
 chrome.iframe(id: 'result').button(:id => "start").click
 sleep(2)
